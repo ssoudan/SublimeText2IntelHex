@@ -12,3 +12,5 @@ Very basic syntax rules for Intel Hex format:
 - data
 - checksum
 
+In case you need some help to use/extend it: https://sublime.wbond.net/packages/AAAPackageDev
+
