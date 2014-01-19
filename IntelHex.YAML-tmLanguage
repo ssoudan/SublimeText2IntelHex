@@ -1,0 +1,18 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: IntelHex
+scopeName: source.intel-hex
+fileTypes: ["hex"]
+uuid: 2909e11b-69d5-4bea-b284-2ebf6b1b04d8
+
+patterns:
+- match: "^(:)([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F]*)([0-9a-fA-F]{2})$"
+  name: command.intel-hex
+  comment: a command
+  captures:
+   '1': {name: support.constant.definition.string.command.intel-hex} 
+   '2': {name: keyword.byte-count.command.intel-hex} 
+   '3': {name: markup.inserted.address.command.intel-hex} 
+   '4': {name: support.function.record-type.command.intel-hex} 
+   '5': {name: source.data.command.intel-hex} 
+   '6': {name: meta.diff.checksum.command.intel-hex} 
